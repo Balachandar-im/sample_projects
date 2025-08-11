@@ -6,3 +6,4 @@ class Add:
     def add(self):
         return self.a + self.b
 
+a = Add(2,3)
