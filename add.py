@@ -11,9 +11,12 @@ print(a.add())
 
 
 class Multiadd(Add):
-    def __init__(self,a,b,args):
+    def __init__(self,a,b,*args):
         super().__init__(a,b)
         self.args = args
 
     def mult_add(self):
-        return sum([self.a+self.b],list(self.args))
+        return sum((self.a,self.b) + self.args)
+
+f = Multiadd(5,5,10,20,10)
+print(f.mult_add())
