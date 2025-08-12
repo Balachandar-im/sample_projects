@@ -7,4 +7,4 @@ class Add:
         return self.a + self.b
 
 a = Add(2,3)
-a.add()
+print(a.add())
